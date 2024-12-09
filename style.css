@@ -1,0 +1,113 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.menu{
+    background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    height: 100%;
+    width: 100%;
+    color: antiquewhite;
+}
+.head{
+    display: flex;
+ justify-content: space-between;  
+ flex-direction: row;
+}
+.sidebar{
+    padding: 2rem;
+}
+.div{
+    padding: 2rem;
+    font-size: 3vw;
+}
+.shop{
+    padding: 2rem;
+}
+.searchBar{
+    text-align:center ;
+}
+ .search{
+    padding: 1rem;
+    border: 5px solid  rgba(238, 222, 133, 0.882);
+    background-color: rgba(245, 245, 245, 0.81); 
+    border-radius: 20px ;
+    width: 50%;
+ }
+ a{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ .items{
+    display: flex;
+    justify-content: space-around;
+    font-size: 3.5vw;
+    padding: 10rem 5rem 5rem 10rem;
+    overflow: auto;
+    gap: 10rem;
+    border-bottom: 5px solid rgba(164, 52, 0, 0.881);
+ }
+ .items::-webkit-scrollbar{
+    display: none;
+ }
+ .dishContainer{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    overflow: auto;
+ }
+ .dishContainer::-webkit-scrollbar{
+    display: none;
+ }
+ .dishbody{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border: 5px solid #d2a23a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ .image{
+    width: 40rem;
+    overflow: hidden;
+ }
+ @media  screen and (max-width:475px) {
+    .image{
+        width: 12rem;
+    }
+    .sidebar{
+        padding: 1rem;
+    }
+    .sidebar img{
+        height: 50px;
+        width: 50px;
+    }
+    .shop{
+        padding: 1rem;
+    }
+    .shop img{
+        height: 50px;
+        width: 50px;
+    }
+    .items{
+        padding: 5rem 5rem 5rem 5rem;
+    }
+    .footersection img{
+        width: 1.5rem;
+    }
+ }
+ .dish_content{
+  color: black;
+  background-color: #fff;
+  font-size: 2vw;
+ }
+ .footersection{
+    display: flex;
+    justify-content: space-around;
+    background-color: #6f0000;
+ }

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</menu></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.menu{
+    background: #200122;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    height: 100%;
+    width: 100%;
+    color: antiquewhite;
+}
+.head{
+    display: flex;
+ justify-content: space-between;  
+ flex-direction: row;
+}
+.sidebar{
+    padding: 2rem;
+}
+.div{
+    padding: 2rem;
+    font-size: 3vw;
+}
+.shop{
+    padding: 2rem;
+}
+.searchBar{
+    text-align:center ;
+}
+ .search{
+    padding: 1rem;
+    border: 5px solid  rgba(238, 222, 133, 0.882);
+    background-color: rgba(245, 245, 245, 0.81); 
+    border-radius: 20px ;
+    width: 50%;
+ }
+ a{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ .items{
+    display: flex;
+    justify-content: space-around;
+    font-size: 3.5vw;
+    padding: 10rem 5rem 5rem 10rem;
+    overflow: auto;
+    gap: 10rem;
+    border-bottom: 5px solid rgba(164, 52, 0, 0.881);
+ }
+ .items::-webkit-scrollbar{
+    display: none;
+ }
+ .dishContainer{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    overflow: auto;
+ }
+ .dishContainer::-webkit-scrollbar{
+    display: none;
+ }
+ .dishbody{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border: 5px solid #d2a23a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+ }
+ .image{
+    width: 40rem;
+    overflow: hidden;
+ }
+ @media  screen and (max-width:475px) {
+    .image{
+        width: 12rem;
+    }
+    .sidebar{
+        padding: 1rem;
+    }
+    .sidebar img{
+        height: 50px;
+        width: 50px;
+    }
+    .shop{
+        padding: 1rem;
+    }
+    .shop img{
+        height: 50px;
+        width: 50px;
+    }
+    .items{
+        padding: 5rem 5rem 5rem 5rem;
+    }
+    .footersection img{
+        width: 1.5rem;
+    }
+ }
+ .dish_content{
+  color: black;
+  background-color: #fff;
+  font-size: 2vw;
+ }
+ .footersection{
+    display: flex;
+    justify-content: space-around;
+    background-color: #6f0000;
+ }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="head">
+            <div class="sidebar">
+                <img src="https://img.icons8.com/?size=64&id=OTxpMqWbm71F&format=png" alt="">
+            </div>
+            <div class="div">
+                <h1>Our Menu</h1>
+            </div>
+            <div class="shop">
+                <img src="https://img.icons8.com/?size=100&id=j3XI41kBOIXY&format=png&color=000000" alt="">
+            </div>
+        </div>
+        <div class="searchBar">
+            <input type="search" placeholder="search" class="search">
+        </div>
+        <div class="items">
+           <a href="#"> <h1>All</h1></a>
+           <a href="#"><h1>Meals</h1></a> 
+            <a href="#"><h1>Snacks</h1></a>
+            <a href="#"><h1>Dessert</h1></a>
+            <a href="#"><h1>Lunch</h1></a>
+        </div>
+        <div class="dishContainer">
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://images.pexels.com/photos/6645920/pexels-photo-6645920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Ramen</h1>
+                    <p><b>Rs. 850.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end -->            
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Hamburger</h1>
+                    <p><b>Rs. 600.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end -->            
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://images.pexels.com/photos/24182334/pexels-photo-24182334/free-photo-of-tacos-on-tray.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Tacos Supreme</h1>
+                    <p><b>Rs. 750.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end -->            
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://images.pexels.com/photos/29173098/pexels-photo-29173098/free-photo-of-delicious-pepperoni-pizza-slice-on-wooden-board.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Cheez Pizza</h1>
+                    <p><b>Rs. 500.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end -->            
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://media.istockphoto.com/id/582308154/photo/four-colours-of-donuts.jpg?s=1024x1024&w=is&k=20&c=IILslzCH1wSw9V7QW449zePjOa1IXWyKKwwe4rLPOAw=" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Donuts</h1>
+                    <p><b>Rs. 500.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end -->            
+            <!-- first dish start -->
+            <div class="dishbody">
+                <div class="dish_img">
+                    <img src="https://images.pexels.com/photos/1603898/pexels-photo-1603898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image">
+                </div>
+                <div class="dish_content">
+                    <h1>Sandwitch</h1>
+                    <p><b>Rs. 600.00</b></p>
+                </div>
+            </div>
+           <!-- first dish end --> 
+        </div>           
+     <div class="footersection">
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=2797&format=png&color=000000" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=10287&format=png&color=000000" alt=""></a>
+            <a href="#"> <img src="https://img.icons8.com/?size=100&id=82819&format=png&color=000000" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/?size=100&id=86280&format=png&color=000000" alt=""></a>
+    </div>
+        
+    </div>
+</body>
+</html>
